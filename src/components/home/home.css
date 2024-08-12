@@ -1,0 +1,145 @@
+.cards {
+  margin: 100px auto;
+  max-width: 1100px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 250px;
+  margin: 20px 0 20px;
+  box-shadow: 2px 2px 15px rgb(62, 188, 234);
+  border-radius: 5px;
+  transition: 0.5s;
+}
+
+.card:hover {
+  transform: scale(1.04, 1.04);
+}
+
+.card img {
+  width: 230px;
+  height: 230px;
+  padding: 10px;
+}
+
+.card-title {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.card-title p {
+  width: 245px;
+}
+
+.add-btn {
+  width: 240px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.add-btn button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 35px;
+  border-radius: 20px;
+  border: none;
+  background-color: dodgerblue;
+  color: #fff;
+  text-align: center;
+  transition: 0.5s;
+}
+
+.add-btn button:hover {
+  background-color: rgb(12, 101, 191);
+}
+
+.cart-icon {
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: dodgerblue;
+}
+
+.added-cart {
+  margin: 10px;
+  border: none;
+  background-color: dodgerblue;
+  color: white;
+  padding: 5px;
+  border-radius: 4px;
+}
+
+/* Media style start */
+
+@media only screen and (max-width: 320px) {
+  .cards {
+    max-width: 320px;
+    width: 300px;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  .card {
+    width: 300px;
+  }
+}
+
+
+@media only screen and (max-width: 540px) {
+  .cards {
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .cards {
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (max-width: 996px) {
+  .cards {
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+    flex-wrap: wrap;
+  }
+
+  .card {
+    width: 250px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .cards {
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+    flex-wrap: wrap;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .cards {
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+    flex-wrap: wrap;
+  }
+}
